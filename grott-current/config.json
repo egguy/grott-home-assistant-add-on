@@ -1,9 +1,9 @@
 {
 	"name": "Grott - HA extension - current",
-	"version": "0.0.3-current",
+	"version": "0.0.4-current",
 	"slug": "grott-current",
 	"description": "The Growatt inverter monitor - current HA plugin",
-	"url": "https://github.com/johanmeijer/grott",
+	"url": "https://github.com/egguy/grott-home-assistant-add-on/tree/main/grott-current",
 	"arch": [
 		"armhf",
 		"armv7",
@@ -20,10 +20,13 @@
 	"ports": {
 		"5279/tcp": 5279
 	},
+	"ports_description": {
+		"5279/tcp": "The port used by grott to receive the data of the logger"
+	},
 	"watchdog": "tcp://[HOST]:[PORT:5279]",
 	"options": {
 		"gmode": "proxy",
-		"gnomqtt": "False",
+		"gnomqtt": true,
 		"ginvtype": "default",
 		"ginvtypemap": "",
 		"mqtt": {}

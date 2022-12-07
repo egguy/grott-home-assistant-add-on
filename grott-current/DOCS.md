@@ -16,15 +16,17 @@ The add-on has a couple of options available. To get the add-on running:
 2. Have some patience and wait a couple of minutes.
 3. Check the add-on log output to see the result.
 
-## Add-on configuration:
+## Add-on configuration
+
 All options from grott are available as options in this add-on. They need to follow the naming convention of the environment variables. Eg:  
+
 ```yaml
-	gmode: proxy
-	gnomqtt: False
-	gmqttip: 127.0.0.1
-	gmqttport: 5288
-	gmqttauth: False
-	gmqtttopic: energy/grott
-	gmqttuser: user
-	gmqttpassword: password
+ gmode: proxy
+ gnomqtt: False
+ gmqttip: 127.0.0.1
+ gmqttport: 5288
+ gmqttauth: False
+ gmqtttopic: energy/grott
+ gmqttuser: user
+ gmqttpassword: password
 ```

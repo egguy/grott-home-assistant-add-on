@@ -1,11 +1,20 @@
 ---
 configuration:
+  gverbose:
+    name: Verbose mode
+    description: Enable the verbose mode. Useful for debugging
+  gminrecl:
+    name: Minimum record length
+    description: The minimum packet length to be treated
+  gnomqtt:
+    name: Disable grott MQTT
+    description: Prevent grott from sending MQTT Message, the add-on has it own MQTT messaging, so this configuration is not required.
   ginvtype:
     name: Inverter type
-    description: "For changing the layout used for decoding (ex: sph or tl3). Keep it on default if using inverter map."
+    description: "For changing the layout used for decoding (ex: sph, spf or tl3). Keep it on default if using inverter map."
   ginvtypemap:
     name: Inverter mapping
-    description: 'An inverter mapping in the form {"SERIAL": "type"} eg: for an SPH6000 with servial "NWO00415E3" : {"NWO00415E3": "sph"}'
+    description: 'An inverter mapping in the form {"SERIAL": "type"} e.g.: for an SPH6000 with serial "NWO00415E3" : {"NWO00415E3": "sph"}'
 
 network:
-  5279/TCP: The webserver port (Not used for Ingress)
+  5279/TCP: This is the port used by grott to receive datalogger information.

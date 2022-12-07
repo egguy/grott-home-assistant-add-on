@@ -41,7 +41,7 @@ if  bashio::config.has_value 'gifbucket'; then export gifbucket="$(bashio::confi
 if  bashio::config.has_value 'giftoken'; then export giftoken="$(bashio::config 'giftoken')"; fi
 if  bashio::config.has_value 'ginvtypemap'; then export ginvtypemap="$(bashio::config 'ginvtypemap')"; fi
 
-
+# pre configure the extension to use the integrated mosquitto broker
 export gextension="True"
 export gextname="grott_ha"
 export gextvar="{\"ha_mqtt_host\": \"$(bashio::services mqtt "host")\", \"ha_mqtt_port\": \"$(bashio::services mqtt "port")\", \"ha_mqtt_user\": \"$(bashio::services mqtt "username")\", \"ha_mqtt_password\": \"$(bashio::services mqtt "password")\"}"
