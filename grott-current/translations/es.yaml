@@ -1,0 +1,20 @@
+---
+configuración:
+  gverbose:
+    nombre: Modo Verbose.
+    descripción: Activa el modo verbose. Útil para depuración.
+  gminrecl:
+    nombre: Longitud mínima de registro.
+    descripción: La longitud mínima del paquete a tratar.
+  gnomqtt
+    nombre: Desactivar grott MQTT.
+    descripción: Evita que grott envíe mensajes MQTT, el complemento tiene su propia mensajería MQTT, por lo que esta configuración no es necesaria.
+  ginvtype:
+    name: Tipo de inversor.
+    descripción: "Para cambiar el diseño utilizado para la decodificación (ej: sph, spf o tl3). Mantenlo por defecto si usas inverter map".
+  ginvtypemap:
+    nombre: mapeo inverso.
+    descripción: 'Un mapeo inverso de la forma {"NUMERO_DE_SERIE": "tipo"} p. ej.: para un inversor SPH6000 con número serie "NWO00415E3", quedaría de la siguiente manera {"NWO00415E3": "sph"}'
+
+red:
+  5279/TCP: Este es el puerto utilizado por grott para recibir información del registrador de datos.
