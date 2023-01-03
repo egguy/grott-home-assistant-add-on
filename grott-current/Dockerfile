@@ -27,7 +27,7 @@ RUN curl -Lk 'https://github.com/johanmeijer/grott/archive/refs/heads/2.7-(Beta)
 RUN curl -L 'https://raw.githubusercontent.com/egguy/grott/feature/ha-extension/examples/Home%20Assistent/grott_ha.py' -o grott_ha.py
 
 #Install required python packages 
-RUN pip install paho-mqtt requests influxdb influxdb
+RUN pip3 install paho-mqtt requests influxdb influxdb
 
 
 RUN chmod a+x script.sh
